@@ -108,7 +108,7 @@ export default function Footer() {
             <ul className="space-y-3">
               <li className="flex items-start">
                 <MapPin className="h-5 w-5 text-primary mr-3 mt-1 flex-shrink-0" />
-                <span>123 Tech Park, Innovation Ave, San Francisco, CA 94107</span>
+                <span>Vaderamanchana Halli, Bengaluru, Karnataka 560105</span>
               </li>
               <li className="flex items-center">
                 <Phone className="h-5 w-5 text-primary mr-3 flex-shrink-0" />

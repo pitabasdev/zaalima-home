@@ -94,10 +94,7 @@ export default function Careers() {
     mutate(data);
   }
 
-  function handleApplyNow(jobTitle: string) {
-    form.setValue("position", jobTitle);
-    setIsDialogOpen(true);
-  }
+
 
   return (
     <>
@@ -202,12 +199,11 @@ export default function Careers() {
                     </ul>
                   </div>
 
-                  <Button
-                    onClick={() => handleApplyNow(job.title)}
+                  <a href="https://forms.gle/ybKi7RSGn3bDuTUE8"><Button
                     className="w-full"
                   >
                     Apply Now
-                  </Button>
+                  </Button></a>
                 </div>
               </motion.div>
             ))}

@@ -3,9 +3,9 @@ import { companyValues, companyTimeline } from "../lib/data";
 import { motion } from "framer-motion";
 import { Link } from "wouter";
 import { Button } from "../components/ui/button";
-import { 
-  Globe, 
-  Users, 
+import {
+  Globe,
+  Users,
   Award
 } from "lucide-react";
 
@@ -29,7 +29,7 @@ export default function About() {
       {/* Who We Are Section */}
       <div className="container mx-auto px-4 py-16">
         <div className="flex flex-col md:flex-row items-center gap-12">
-          <motion.div 
+          <motion.div
             className="md:w-1/2"
             initial={{ opacity: 0, x: -20 }}
             whileInView={{ opacity: 1, x: 0 }}
@@ -64,16 +64,16 @@ export default function About() {
               </div>
             </div>
           </motion.div>
-          <motion.div 
+          <motion.div
             className="md:w-1/2"
             initial={{ opacity: 0, x: 20 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 0.5 }}
           >
-            <img 
-              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-              alt="Zaalima Development Team" 
+            <img
+              src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+              alt="Zaalima Development Team"
               className="rounded-lg shadow-lg w-full"
             />
           </motion.div>
@@ -102,7 +102,7 @@ export default function About() {
         <h2 className="text-3xl font-bold mb-12 text-center">Core Values</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {companyValues.map((value, index) => (
-            <motion.div 
+            <motion.div
               key={value.id}
               className="bg-white rounded-lg shadow-md p-6 border-t-4 border-primary"
               initial={{ opacity: 0, y: 20 }}
@@ -127,9 +127,9 @@ export default function About() {
             </p>
           </div>
           <div className="max-w-4xl mx-auto">
-            <img 
-              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" 
-              alt="Global Map" 
+            <img
+              src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80"
+              alt="Global Map"
               className="rounded-lg shadow-lg w-full"
             />
           </div>
@@ -142,10 +142,10 @@ export default function About() {
         <div className="relative">
           {/* Vertical line */}
           <div className="absolute left-1/2 transform -translate-x-1/2 h-full w-0.5 bg-primary/20"></div>
-          
+
           <div className="space-y-12">
             {companyTimeline.map((event, index) => (
-              <motion.div 
+              <motion.div
                 key={event.id}
                 className={`relative flex ${index % 2 === 0 ? 'flex-row-reverse' : 'flex-row'} items-center`}
                 initial={{ opacity: 0, y: 20 }}
@@ -156,7 +156,7 @@ export default function About() {
                 <div className="w-1/2"></div>
                 <div className="z-10 flex items-center justify-center">
                   <div className="bg-primary text-white rounded-full w-10 h-10 flex items-center justify-center font-bold text-xs">
-                    {event.year}
+
                   </div>
                 </div>
                 <div className={`w-1/2 p-6 bg-white rounded-lg shadow-md ${index % 2 === 0 ? 'text-right mr-6' : 'ml-6'}`}>

@@ -237,7 +237,7 @@ export default function Contact() {
         </div>
         <div className="h-96 bg-neutral-200 w-full">
           <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.040161162799!2d-122.3916806!3d37.7907908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f67f0d37c3%3A0x32c2e2a79b2aafd7!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1647627574027!5m2!1sen!2sus"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4717.394379277334!2d77.62650200345655!3d12.765989425125394!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae6916a57195e1%3A0xe23082d8410848b3!2sZaalima%20Development%20Pvt.%20Ltd!5e0!3m2!1sen!2sin!4v1746333229083!5m2!1sen!2sin"
             width="100%"
             height="100%"
             style={{ border: 0 }}
